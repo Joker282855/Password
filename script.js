@@ -51,7 +51,7 @@ function writePassword () {
     else {
       specialCase = specialCase[i] * 0;
 
-
+      
     }
   }  
   
@@ -61,7 +61,7 @@ function writePassword () {
   numberInput = [5, 6, 7];
   specialCase = ["@", "$", "%"];
 
-  
+  window.alert(" Your password is " + characterSelect + upperCase + lowerCase + numberInput + specialCase);
   var password = generatePassword(characterSelect, upperCase, lowerCase, numberInput, specialCase);
   var passwordText = document.querySelector("#password");  
 
