@@ -16,4 +16,15 @@ I was able to get the majority of the critiera matching to my password though th
 I was able to have my password dispalyed as an alert by using the window.alert property
 
 ## Link to Application
-<a href = "">
+<a href="https://joker282855.github.io/Password/">Password Generator Link</a>
+
+## Screenshot of Application
+<img src="./images/Screenshot.jpg" alt="Password Generator">
+
+## Built With
+1. HTML
+2. CSS
+3. Javascript
+
+## Contributors
+Made with ❤️ by Josh Jackson
