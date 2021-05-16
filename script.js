@@ -10,7 +10,7 @@ function writePassword (passwordText) {
   } else {
     characterSelect = Math.random(Math.floor () * 9) + 120;
   }
-  var upperCase = window.prompt('Would you like to have uppercase letters in your password? Enter "OK" if you do or click "Cancel" if you dont');
+  var upperCase = window.prompt('Would you like to have uppercase letters in your password? Enter "OK" if you do or enter "Cancel" if you dont');
   if (upperCase === "OK" || upperCase === "ok") {
     upperCase = "SDFHGEISOKDHEOLE";
   } else if( upperCase === "Cancel" || upperCase === "cancel") {
@@ -18,7 +18,7 @@ function writePassword (passwordText) {
   } else {
     upperCase = "45689240678";
   }
-  var lowerCase = window.prompt('Would you like to have lowercase letters in your password? Enter "OK if you do or click "Cancel if you dont');
+  var lowerCase = window.prompt('Would you like to have lowercase letters in your password? Enter "OK if you do or enter "Cancel if you dont');
   if (lowerCase === "OK" || lowerCase === "ok") {
     lowerCase = "thyuadksiorlsenl";  
   } else if (lowerCase === "Cancel" || lowerCase === "cancel") {
@@ -26,7 +26,7 @@ function writePassword (passwordText) {
   } else {
     lowerCase = "##^%&%$@#%^";
   }
-  var numberInput = window.prompt('Would you like to have numbers in your password? Enter "OK" if you do or click "Cancel" if you dont');
+  var numberInput = window.prompt('Would you like to have numbers in your password? Enter "OK" if you do or enter "Cancel" if you dont');
   if (numberInput === "OK" || numberInput === "ok") {
     numberInput = "236758490657";
   } else if (numberInput === "Cancel" || numberInput === "cancel") {
@@ -34,7 +34,7 @@ function writePassword (passwordText) {
   } else {
     numberInput = "CBSLIFJWOEITJHOW";
   }
-  var specialCase = window.prompt('Would you like to have special characters in your password? Enter "OK" if you do or "Cancel" if you dont');
+  var specialCase = window.prompt('Would you like to have special characters in your password? Enter "OK" if you do or enter "Cancel" if you dont');
   if (specialCase === "OK" || specialCase === "ok") {
     specialCase = "#$@^%&*$*!@#$";
   } else if (specialCase === "Cancel" || specialCase === "cancel") {
