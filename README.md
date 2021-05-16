@@ -19,7 +19,7 @@ I was able to have my password dispalyed as an alert by using the window.alert p
 <a href="https://joker282855.github.io/Password/">Password Generator Link</a>
 
 ## Screenshot of Application
-<img src="./Password/images/Screenshot.jpg" alt="Password Generator">
+<img src="./Images/Screenshot.jpg" alt="Password Generator" />
 
 ## Built With
 1. HTML
