@@ -38,7 +38,7 @@ function writePassword (passwordText) {
     specialCase = "thesdfwr";  
   }
 
-  
+  passwordAlert = window.alert( " Your passwrod is " + upperCase + lowerCase + numberInput + specialCase);
   
   var password = generatePassword();
   var passwordText = document.querySelector("#password");  
