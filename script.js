@@ -1,5 +1,5 @@
 // Assignment Code
-var generateBtn = document.querySelector("#generate");
+var generateBtn = document.querySelector("#generate"); 
 
 // Write password to the #password input
 function writePassword (passwordText) {
@@ -8,7 +8,7 @@ function writePassword (passwordText) {
     window.prompt("Must pick a number between 8-128");
     writePassword();
   } else {
-    characterSelect = Math.random(Math.floor () * 9) + 120;
+    characterSelect = characterSelect.length
   }
   var upperCase = window.prompt('Would you like to have uppercase letters in your password? Enter "OK" if you do or enter "Cancel" if you dont');
   if (upperCase === "OK" || upperCase === "ok") {
@@ -44,7 +44,6 @@ function writePassword (passwordText) {
   }
   passwordAlert = window.alert( " Your passwrod is " + upperCase + lowerCase + numberInput + specialCase);
   
-
   var password = generatePassword();
   var passwordText = document.querySelector("#password");  
 
