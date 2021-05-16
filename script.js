@@ -10,36 +10,41 @@ function writePassword (passwordText) {
   } else {
     characterSelect = Math.random(Math.floor () * 9) + 120;
   }
-  var upperCase = window.confirm("Click OK to confirm including lowercase letters");
-  if (upperCase === "OK") {
+  var upperCase = window.prompt('Would you like to have uppercase letters in your password? Enter "OK" if you do or click "Cancel" if you dont');
+  if (upperCase === "OK" || upperCase === "ok") {
     upperCase = "SDFHGEISOKDHEOLE";
-  } 
-    else {
+  } else if( upperCase === "Cancel" || upperCase === "cancel") {
     upperCase = "12345679890329";
-  }
-  var lowerCase = window.confirm("Click OK to confirm including uppercase letters");
-  if (lowerCase === "OK") {
-    lowerCase = "thyuadksiorlsenl";  
-  }
-    else {
-    lowerCase = "@$#%^&@!**";
-  }
-  var numberInput = window.confirm("Click OK to confirm including numeric values");
-  if (numberInput === "OK") {
-    numberInput = "236758490657";
   } else {
+    upperCase = "45689240678";
+  }
+  var lowerCase = window.prompt('Would you like to have lowercase letters in your password? Enter "OK if you do or click "Cancel if you dont');
+  if (lowerCase === "OK" || lowerCase === "ok") {
+    lowerCase = "thyuadksiorlsenl";  
+  } else if (lowerCase === "Cancel" || lowerCase === "cancel") {
+    lowerCase = "@$#%^&@!**";
+  } else {
+    lowerCase = "##^%&%$@#%^";
+  }
+  var numberInput = window.prompt('Would you like to have numbers in your password? Enter "OK" if you do or click "Cancel" if you dont');
+  if (numberInput === "OK" || numberInput === "ok") {
+    numberInput = "236758490657";
+  } else if (numberInput === "Cancel" || numberInput === "cancel") {
     numberInput = "GHRTYUISJGIER";
+  } else {
+    numberInput = "CBSLIFJWOEITJHOW";
   }
-  var specialCase = window.confirm("Click OK to confirm including special charaters");
-  if (specialCase === "OK") {
-    specialCase = "#$@^%&*$*!@#$";  
-  }
-    else {
+  var specialCase = window.prompt('Would you like to have special characters in your password? Enter "OK" if you do or "Cancel" if you dont');
+  if (specialCase === "OK" || specialCase === "ok") {
+    specialCase = "#$@^%&*$*!@#$";
+  } else if (specialCase === "Cancel" || specialCase === "cancel") {
     specialCase = "thesdfwr";  
+  } else {
+    specialCase = "wdiwosheild";
   }
-
   passwordAlert = window.alert( " Your passwrod is " + upperCase + lowerCase + numberInput + specialCase);
   
+
   var password = generatePassword();
   var passwordText = document.querySelector("#password");  
 
