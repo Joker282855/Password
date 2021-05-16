@@ -43,7 +43,8 @@ function writePassword (passwordText) {
     specialCase = "wdiwosheild";
   }
   passwordAlert = window.alert( " Your passwrod is " + upperCase + lowerCase + numberInput + specialCase);
-  
+  writePassword();
+
   var password = generatePassword();
   var passwordText = document.querySelector("#password");  
 
