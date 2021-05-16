@@ -7,8 +7,10 @@ function writePassword (passwordText) {
   if (characterSelect < 8 || characterSelect > 128) {
     window.prompt("Must pick a number between 8-128");
     writePassword();
+  } else if (characterSelect > 8 || characterSelect < 128) {
+    window.alert("you will be asked if you want numbers, lowercase letters, uppercase letters or special characters in your password next");
   } else {
-    characterSelect = characterSelect.length
+    characterSelect = characterSelect.value
   }
   var upperCase = window.prompt('Would you like to have uppercase letters in your password? Enter "OK" if you do or enter "Cancel" if you dont');
   if (upperCase === "OK" || upperCase === "ok") {
@@ -22,7 +24,7 @@ function writePassword (passwordText) {
   if (lowerCase === "OK" || lowerCase === "ok") {
     lowerCase = "thyuadksiorlsenl";  
   } else if (lowerCase === "Cancel" || lowerCase === "cancel") {
-    lowerCase = "@$#%^&@!**";
+    lowerCase = "ADKWODISNWK";
   } else {
     lowerCase = "##^%&%$@#%^";
   }
@@ -38,12 +40,11 @@ function writePassword (passwordText) {
   if (specialCase === "OK" || specialCase === "ok") {
     specialCase = "#$@^%&*$*!@#$";
   } else if (specialCase === "Cancel" || specialCase === "cancel") {
-    specialCase = "thesdfwr";  
+    specialCase = "WEHXISKWLEDHS";  
   } else {
     specialCase = "wdiwosheild";
   }
   passwordAlert = window.alert( " Your passwrod is " + upperCase + lowerCase + numberInput + specialCase);
-  writePassword();
 
   var password = generatePassword();
   var passwordText = document.querySelector("#password");  
